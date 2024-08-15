@@ -11,9 +11,9 @@ export default function NavBar() {
                 <ul className={styles.nav_links}>
                     <li><Link href='/'>Dashboard</Link></li>
                     <li><Link href='/inventory'>Inventory</Link></li>
-                    <li><Link href='/'>Pricing</Link></li>
-                    <li><Link href='/'>Finance</Link></li>
-                    <li><Link href='/'>Loyalty</Link></li>
+                    <li><Link href='/pricing'>Pricing</Link></li>
+                    <li><Link href='/finance'>Finance</Link></li>
+                    <li><Link href='/loyalty'>Loyalty</Link></li>
                 </ul>
             </div>
         </nav>

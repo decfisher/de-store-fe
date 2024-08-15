@@ -1,7 +1,7 @@
-export default function Product() {
+export default function Inventory() {
     return (
         <main>
-            Inventory
+            <h1>Inventory</h1>
         </main>
     );
 }

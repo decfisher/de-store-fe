@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      Main
+      <h1>Reporting and Analysis</h1>
     </main>
   );
 }
