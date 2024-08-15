@@ -10,7 +10,7 @@ export default function ProductListings() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/api/products', {
+        fetch('/api/inventory/products/all', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

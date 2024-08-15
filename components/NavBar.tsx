@@ -1,0 +1,21 @@
+import Link from 'next/link';
+import styles from './navbar.module.css';
+
+export default function NavBar() {
+    return (
+        <nav className={styles.navbar}>
+            <div className={styles.navbar_container}>
+                <div className={styles.logo}>
+                    <Link href='/'>DE-Store Management</Link>
+                </div>
+                <ul className={styles.nav_links}>
+                    <li><Link href='/'>Dashboard</Link></li>
+                    <li><Link href='/inventory'>Inventory</Link></li>
+                    <li><Link href='/'>Pricing</Link></li>
+                    <li><Link href='/'>Finance</Link></li>
+                    <li><Link href='/'>Loyalty</Link></li>
+                </ul>
+            </div>
+        </nav>
+    )
+}
