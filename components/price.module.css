@@ -1,0 +1,40 @@
+.product_container {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.product_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_details h3 {
+    margin: 0.5rem 0;
+}
+
+.product_details p {
+    margin: 0.25rem 0;
+}
+
+.input_product {
+    display: flex;
+    align-items: center;
+}
+
+.input_text {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.input_text p {
+    padding-right: 5px; 
+}
+
+.input_text input {
+    width: 48px;
+}

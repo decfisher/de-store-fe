@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100%;
+}
+
+.page_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.page_header h1 {
+  margin: 1rem;
+}
+
+.page_header p {
+  margin: 0.25rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons button {
+  margin: 1rem;
+  padding: 2rem;
+  width: 20rem;
+  font-size: large;
+  border-radius: 20px;
+  border: 0;
+  background-color: rgb(150, 150, 150)
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(240, 240, 240);
+}

@@ -1,13 +1,20 @@
-/* components/Navbar.module.css */
-.navbar {
-    background-color: #333;
-    padding: 10px 20px;
-}
-  
 .navbar_container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    height: 6rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
   
 .logo a {

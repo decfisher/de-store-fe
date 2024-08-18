@@ -3,8 +3,8 @@ import styles from './navbar.module.css';
 
 export default function NavBar() {
     return (
-        <nav className={styles.navbar}>
-            <div className={styles.navbar_container}>
+        <nav className={styles.navbar_container}>
+            <div className={styles.navbar}>
                 <div className={styles.logo}>
                     <Link href='/'>DE-Store Management</Link>
                 </div>
