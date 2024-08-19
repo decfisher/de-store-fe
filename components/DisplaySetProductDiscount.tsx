@@ -16,7 +16,7 @@ export default function DisplaySetProductDiscount({ product }: DisplaySetProduct
     };
 
     return (
-        <div className={styles.product_container}>
+        <div className={styles.product_container_lg}>
             <div className={styles.product_details}>
                 <h3>{product.name}</h3>
                 <p>Current Price: {formatToGBP(product.price)}</p>

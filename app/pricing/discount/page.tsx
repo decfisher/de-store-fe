@@ -65,10 +65,10 @@ export default function Discount() {
                             (
                                 <>
                                     {/* While loading, display skeleton components for product listings */}
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={150} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={150} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={150} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={150} className={styles.skeleton}/>
                                 </>
                             )
                     }
