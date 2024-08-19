@@ -1,0 +1,29 @@
+.customer_container {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.loading_container, .success_container, .failure_container {
+    display: flex;
+    align-items: center;
+}
+
+.success_container p {
+    color: #2e7d32;
+}
+
+.failure_container p {
+    color: #d32f2f;
+}
+
+.loading {
+    margin: 0 1rem;
+}
+
+.icon {
+    margin: 0 0.5rem; 
+}
