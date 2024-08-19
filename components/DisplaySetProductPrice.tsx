@@ -1,5 +1,5 @@
 import { Product } from "@/models/product";
-import PriceSetSnackBar from "./TransitionsSnackbar";
+import PriceSetSnackBar from "./PriceSetSnackBar";
 import styles from "./price.module.css";
 import { useState } from "react";
 import { formatToGBP } from "@/util/helpers";

@@ -25,6 +25,16 @@
     align-items: center;
 }
 
+.input_discount {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.select_input select {
+    margin-bottom: 1rem;
+}
+
 .input_text {
     display: flex;
     align-items: center;

@@ -5,21 +5,21 @@ import Fade from '@mui/material/Fade';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import { Product } from '@/models/product';
-import { formatToGBP } from '@/util/helpers';
 import { Alert, CircularProgress } from '@mui/material';
 import styles from './snackbar.module.css';
+import { formatDiscountCode } from '@/util/helpers';
 
-interface TransitionsSnackBarProps {
+interface DiscountSetSnackBarProps {
   buttonText: string;
   product: Product;
-  newPrice: number;
+  newDiscount: string;
 }
 
 function SlideTransition(props: SlideProps) {
   return <Slide {...props} direction='up' />;
 }
 
-export default function PriceSetSnackBar({ buttonText, product, newPrice }: TransitionsSnackBarProps) {
+export default function DiscountSetSnackBar({ buttonText, product, newDiscount }: DiscountSetSnackBarProps) {
   const [state, setState] = React.useState<{
     open: boolean;
     Transition: React.ComponentType<
@@ -49,14 +49,14 @@ export default function PriceSetSnackBar({ buttonText, product, newPrice }: Tran
     ) =>
     () => {
       setLoading(true);
-      fetch('/api/pricing/price/set', {
+      fetch('/api/pricing/discount/set', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           productId: product.id,
-          price: newPrice,
+          discount: newDiscount,
         })
       })
         .then(response => {
@@ -69,7 +69,7 @@ export default function PriceSetSnackBar({ buttonText, product, newPrice }: Tran
         .then(data => {
           setAlert(
             <Alert severity='success' variant='filled' sx={{ width: '100%' }}>
-              Successfully set price of {product.name} to {formatToGBP(newPrice)}
+              Successfully set discount offer of {product.name} to {formatDiscountCode(newDiscount)}
             </Alert>
           );
           setState({
@@ -81,7 +81,7 @@ export default function PriceSetSnackBar({ buttonText, product, newPrice }: Tran
         .catch(error => {
           setAlert(
             <Alert severity='error' variant='filled' sx={{ width: '100%' }}>
-              Could not update price of {product.name}
+              Could not update discount offer of {product.name}
             </Alert>
           );
           setState({
