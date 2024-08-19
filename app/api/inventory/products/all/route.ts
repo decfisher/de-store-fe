@@ -12,12 +12,13 @@ export async function GET (req: NextRequest) {
         });
         
         if (!response.ok) {
-            throw new Error('Error fetching products')
+            throw new Error('Error fetching products');
         }
 
         const data = await response.json()
         return NextResponse.json(data)
     } catch (error) {
+        console.log('INVENTORY URL:', process.env.INVENTORY_SERVICE_URL)
         return NextResponse.json({ error: 'Internal server error' })
     }
 }
