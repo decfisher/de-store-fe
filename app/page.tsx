@@ -19,8 +19,8 @@ const theme = createTheme({
 });
 
 export default function Home() {
-  const [start, setStart] = useState<Dayjs | null>(dayjs('2022-04-17T15:30'));
-  const [end, setEnd] = useState<Dayjs | null>(dayjs('2022-04-17T15:30'));
+  const [start, setStart] = useState<Dayjs | null>(dayjs(new Date()));
+  const [end, setEnd] = useState<Dayjs | null>(dayjs(new Date()));
   const [isLoading, setIsLoading] = useState(false);
   const [isGenerated, setIsGenerated] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
