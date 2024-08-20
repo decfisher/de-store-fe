@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET (req: NextRequest) {
     try {
-        const response = await fetch(`${process.env.INVENTORY_SERVICE_URL}/all`, {
+        const response = await fetch(`${process.env.LOYALTY_SERVICE_URL}/all`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -12,7 +12,7 @@ export async function GET (req: NextRequest) {
         });
         
         if (!response.ok) {
-            throw new Error('Error fetching products');
+            throw new Error('Error fetching loyalty schemes');
         }
 
         const data = await response.json()

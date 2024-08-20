@@ -65,10 +65,11 @@ export default function Prices() {
                             (
                                 <>
                                     {/* While loading, display skeleton components for product listings */}
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
-                                    <Skeleton variant='rectangular' width={'600px'} height={100} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={98} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={98} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={98} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={98} className={styles.skeleton}/>
+                                    <Skeleton variant='rectangular' width={'600px'} height={98} className={styles.skeleton}/>
                                 </>
                             )
                     }
