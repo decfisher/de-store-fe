@@ -37,49 +37,16 @@
   padding: 2rem 3rem;
 }
 
-.content {
+.products {
   width: 100%;
+  max-height: 100%;
+  height: 100%;
   overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.date_picker {
-  width: 550px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
 .skeleton {
   margin: 1rem 0;
-}
-
-.loading {
-  margin: 0 1rem;
-}
-
-.loading_container {
-  display: flex;
-  align-items: center;
-}
-
-.time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.error {
-  display: flex;
-  align-items: center;
-}
-
-.error p {
-  color: #d32f2f;
-  margin-left: 0.5rem;
-  font-weight: 600;
 }

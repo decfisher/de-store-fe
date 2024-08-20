@@ -10,7 +10,9 @@ export async function GET(request: NextRequest) {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
+                'Cache-Control': 'no-store',
             },
+            next: { revalidate: 0 },
         });
 
         const data = await response.json();

@@ -6,6 +6,7 @@ export interface LoyaltyRecord {
 }
 
 export enum LoyaltyType {
+    NO_LOYALTY = 'No Loyalty Used',
     FIFTY_PERCENT_OFF = '50% Off Basket',
     ONE_ITEM_FREE = 'One Item Free',
     FREE_PRODUCT_NEXT_PURCHASE = 'One Product Free on Next Shop',

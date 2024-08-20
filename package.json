@@ -14,7 +14,9 @@
     "@fontsource/roboto": "^5.0.14",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
+    "@mui/x-date-pickers": "^7.13.0",
     "@next/env": "^14.2.5",
+    "dayjs": "^1.11.13",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"

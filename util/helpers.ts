@@ -38,6 +38,10 @@ export function formatLoyaltyDiscount(loyalty: string): string {
         return LoyaltyType.FREE_PRODUCT_NEXT_PURCHASE;
     }
 
+    if (loyalty === 'NO_LOYALTY') {
+        return LoyaltyType.NO_LOYALTY;
+    }
+
     return loyalty;
 }
 
