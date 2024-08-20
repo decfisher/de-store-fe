@@ -58,7 +58,7 @@ export default function Loyalty() {
                         loyaltySchemes ?
                             (
                                 loyaltySchemes.map((scheme) => (
-                                    <div className={styles.loyalty_listing}>
+                                    <div key={scheme.id} className={styles.loyalty_listing}>
                                         <div>
                                             <h3>{formatLoyaltyDiscount(scheme.name)}</h3>
                                             {
