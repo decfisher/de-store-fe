@@ -1,31 +1,26 @@
-'use client';
-
-import { DateTimePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import styles from './page.module.css';
-import { createTheme, ThemeProvider } from '@mui/material';
 import React from 'react';
-import dayjs, { Dayjs } from 'dayjs';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import ContentPasteIcon from '@mui/icons-material/ContentPaste';
+import Link from 'next/link';
 
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#333',
-        },
-    },
-});
-
-export default function Inventory() {
+export default function Pricing() {
     return (
-        <ThemeProvider theme={theme}>
-            <div className={styles.main}>
-                <div className={styles.page_header}>
-                    <h1>Inventory</h1>
-                </div>
-                <div className={styles.products}>
-                    
-                </div>
+        <div className={styles.main}>
+            <div className={styles.page_header}>
+                <h1>Inventory</h1>
+                <p>Manage and view stock for products</p>
             </div>
-        </ThemeProvider>
-    );
+            <div className={styles.buttons}>
+                <Link href='/inventory/all' className={styles.link}>
+                    <InventoryIcon fontSize='large'/>
+                    <p>View Inventory</p>
+                </Link>
+                <Link href='/inventory' className={styles.link}>
+                    <ContentPasteIcon fontSize='large'/>
+                    <p>Update Stock</p>
+                </Link>
+            </div>
+        </div>
+    )
 }
