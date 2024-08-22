@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .buttons button {
@@ -42,4 +43,31 @@
   cursor: pointer;
   font-weight: bold;
   background-color: rgb(240, 240, 240);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 25px;
+  padding: 0 1rem;
+  width: 275px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.link:visited, .link:active {
+  color: #333;
+}
+
+.link:hover {
+  background-color: rgb(250, 248, 248);
+  color: #969696;
+}
+
+.link p {
+  font-weight: bold;
+  font-size: 21px;
+  padding: 0.5rem 1rem;
 }
