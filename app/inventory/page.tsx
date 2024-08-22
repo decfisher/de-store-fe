@@ -16,7 +16,7 @@ export default function Pricing() {
                     <InventoryIcon fontSize='large'/>
                     <p>View Inventory</p>
                 </Link>
-                <Link href='/inventory' className={styles.link}>
+                <Link href='/inventory/adjust-stock' className={styles.link}>
                     <ContentPasteIcon fontSize='large'/>
                     <p>Update Stock</p>
                 </Link>

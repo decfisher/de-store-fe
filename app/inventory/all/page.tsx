@@ -87,9 +87,9 @@ export default function ProductListings() {
                     <TableHead>
                         <TableRow>
                             <TableCell sx={{ fontWeight: 'bold', }}>Product</TableCell>
+                            <TableCell align='right' sx={{ fontWeight: 'bold', }}>Current Stock</TableCell>
                             <TableCell align='right' sx={{ fontWeight: 'bold', }}>Current Price</TableCell>
                             <TableCell align='right' sx={{ fontWeight: 'bold', }}>Discount</TableCell>
-                            <TableCell align='right' sx={{ fontWeight: 'bold', }}>Current Stock</TableCell>
                             <TableCell align='right' sx={{ fontWeight: 'bold', }}>Last Updated</TableCell>
                         </TableRow>
                     </TableHead>
@@ -102,9 +102,9 @@ export default function ProductListings() {
                                 <TableCell component='th' scope='row'>
                                     {row.name}
                                 </TableCell>
+                                <TableCell align='right'>{row.quantity}</TableCell>
                                 <TableCell align='right'>{formatToGBP(row.price)}</TableCell>
                                 <TableCell align='right'>{formatDiscountCode(row.discount)}</TableCell>
-                                <TableCell align='right'>{row.quantity}</TableCell>
                                 <TableCell align='right'>{dayjs(row.updatedAt).format('DD/MM/YYYY HH:mm')}</TableCell>
                             </TableRow>
                         ))}

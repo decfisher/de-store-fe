@@ -8,7 +8,7 @@ export default function Pricing() {
         <div className={styles.main}>
             <div className={styles.page_header}>
                 <h1>Pricing</h1>
-                <p>Manage pricing, discount and delivery for products</p>
+                <p>Manage pricing and discounts for products</p>
             </div>
             <div className={styles.buttons}>
                 <Link href='/pricing/prices' className={styles.link}>
