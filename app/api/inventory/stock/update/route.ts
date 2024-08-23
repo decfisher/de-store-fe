@@ -4,25 +4,15 @@ export async function PATCH (req: NextRequest) {
     try {
         const { id, quantity } = await req.json();
 
-        let url = `${process.env.INVENTORY_SERVICE_URL}/add-stock`;
-        let quantityValue = quantity;
-
-        if (quantity < 0) {
-            url = `${process.env.INVENTORY_SERVICE_URL}/remove-stock`
-            quantityValue = 0 - quantity;
-        }
-
-        console.log(url)
-
-        const response = await fetch(url, {
+        const response = await fetch(`${process.env.INVENTORY_SERVICE_URL}/adjust-stock`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 id,
-                quantity: quantityValue,
-            })
+                quantity,
+            }),
         });
         
         if (!response.ok) {
